@@ -1,0 +1,545 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hero"
+    tools:context="com.trainer.shruty.personaltrainer.WorkOutDashboard">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_30"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="7sp"
+                card_view:cardCornerRadius="8sp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:background="#f5a623">
+                    <ImageView
+                        android:layout_width="68dp"
+                        android:layout_height="67dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingTop="20dp"
+                        android:layout_marginLeft="130dp"
+                        android:src="@drawable/shape"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="Say 'OK Trainer'"
+                        android:textSize="22sp"
+                        android:textColor="#303030"
+                        android:textAlignment="center"
+                        android:drawableRight="@drawable/shape2"
+                        android:drawablePadding="10dp"
+                        android:id="@+id/voice_recog_text" />
+                </LinearLayout>
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Say 'OK Trainer'"
+                    android:textSize="22sp"
+                    android:textColor="#303030"
+                    android:drawableRight="@drawable/shape2"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/voice_recog_text" />-->
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="50dp"
+                android:text="Exercise"
+                android:textSize="18dp"
+                android:textColor="#757575"
+                android:textAlignment="center"
+                />
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:onClick="callPushUp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="7sp"
+                card_view:cardCornerRadius="8sp"
+                card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:text="Strength"
+                    android:textSize="20dp"
+                    android:freezesText="true"
+                    android:textColor="#757575"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:background="@drawable/border_bottom"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Push Ups"
+                        android:textSize="26dp"
+                        android:freezesText="true"
+                        android:textColor="#757575"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"/>
+                    <TextView
+                        android:id="@+id/push_last_try"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Last Try : N/A"
+                        android:textSize="18dp"
+                        android:freezesText="true"
+                        android:textColor="#757575"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="START"
+                        android:textSize="18dp"
+                        android:freezesText="true"
+                        android:textColor="#f5a623"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/rsz_1rsz_screen_shot_2015_10_26_at_145251_2"/>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="7sp"
+                card_view:cardCornerRadius="8sp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:text="Strength"
+                            android:textSize="20dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:background="@drawable/border_bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pull Ups"
+                            android:textSize="26dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"/>
+                        <TextView
+                            android:id="@+id/pull_last_try"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Try : N/A"
+                            android:textSize="18dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Not Unlocked Yet"
+                            android:textSize="18dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill"
+                        android:layout_marginRight="0dp"
+                        android:src="@drawable/rsz_pull_up"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="7sp"
+                card_view:cardCornerRadius="8sp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:text="Strength"
+                            android:textSize="20dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:background="@drawable/border_bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Burpee"
+                            android:textSize="26dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"/>
+                        <TextView
+                            android:id="@+id/burp_last_try"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Try : N/A"
+                            android:textSize="18dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Not Unlocked Yet"
+                            android:textSize="18dp"
+                            android:freezesText="true"
+                            android:textColor="#757575"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill"
+                        android:layout_marginRight="0dp"
+                        android:src="@drawable/rsz_screen_shot_2015_11_09_at_135304"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+   <!-- <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="#91e9e9e9"
+
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text='Say "OK Trainer'
+                android:paddingTop="30dp"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:drawableRight="@drawable/shape"
+                android:drawablePadding="10dp"
+                android:background="#fafafa"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:shadowColor="@color/cardview_dark_background"
+                android:shadowDx="5"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Exercises"
+                    android:layout_gravity="center"
+                    android:paddingLeft="140dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Strength"
+
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="Push Up"
+                    android:layout_marginLeft="-55dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Last try : Aug 22"
+                    android:layout_marginLeft="-80dp"
+                    android:layout_marginTop="65dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="START"
+                    android:layout_marginLeft="-120dp"
+                    android:layout_marginTop="90dp"
+                    android:textSize="15dp"
+
+                    android:textColor="#f5a623"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:drawableRight="@drawable/screen_shot_2015_10_26_at_145251_copy_2"
+
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Strength"
+
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="Push Up"
+                    android:layout_marginLeft="-55dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Last try : Aug 22"
+                    android:layout_marginLeft="-80dp"
+                    android:layout_marginTop="65dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="START"
+                    android:layout_marginLeft="-120dp"
+                    android:layout_marginTop="90dp"
+                    android:textSize="15dp"
+                    android:layout_gravity=""
+                    android:textColor="#f5a623"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:drawableRight="@drawable/screen_shot_2015_10_26_at_145251_copy_2"
+
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Strength"
+
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="Push Up"
+                    android:layout_marginLeft="-55dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20dp"
+                    android:layout_gravity=""
+
+                    />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Last try : Aug 22"
+                    android:layout_marginLeft="-80dp"
+                    android:layout_marginTop="65dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="START"
+                    android:layout_marginLeft="-120dp"
+                    android:layout_marginTop="90dp"
+                    android:textSize="15dp"
+                    android:layout_gravity=""
+                    android:textColor="#f5a623"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:drawableRight="@drawable/screen_shot_2015_10_26_at_145251_copy_2"
+
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>-->
+
+
+
+
+</RelativeLayout>
