@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/grad_bg"
+    tools:context="com.trainer.shruty.personaltrainer.Welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/info"/>
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:scaleType="centerCrop"-->
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/intro_app"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/login"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="110dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/border"
+            android:clickable="true"
+            android:onClick="login"/>
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/register"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:onClick="register"/>
+    </LinearLayout>
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/noun_32324_cc"
+        android:maxWidth="146dp"
+        android:maxHeight="179dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="102dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_app"
+        />-->
+</RelativeLayout>

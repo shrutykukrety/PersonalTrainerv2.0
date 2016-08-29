@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="landing_bg">
+        <item>@color/light_purple</item>
+        <item>@color/light_cyan</item>
+        <item>@color/light_orange</item>
+        <item>@color/light_green</item>
+    </array>
+
+    <array name="icons">
+        <item>@drawable/info</item>
+        <item>@drawable/noun_148912_cc</item>
+        <item>@drawable/shape</item>
+        <item>@drawable/ic_repeat_one_white_24_px</item>
+    </array>
+
+    <string-array name="titles" >
+        <item>@string/intro_app</item>
+        <item>@string/tut</item>
+        <item>@string/voice</item>
+        <item>@string/rep_counter</item>
+    </string-array>
+
+    <string-array name="hints" >
+        <item></item>
+        <item>@string/tut_hint</item>
+        <item>@string/voice_hint</item>
+        <item>@string/rep_counter_hint</item>
+    </string-array>
+</resources>

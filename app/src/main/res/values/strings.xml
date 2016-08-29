@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Project Trainer</string>
+    <string name="action_settings">Action Settings</string>
+    
+    <string name="kws_caption">Say \"Hey Trainer\".</string>
+    <string name="lee_caption">Say \"Push\" or \"Pull\" up to choose.</string>
+    <string name="lee_caption_2">Say \"Start\" to begin Workout Session.</string>
+    <string name="menu_caption">Say \"digits\", \"forecast\" or \"phones\" to choose the grammar, language model or phonetic decoder example.</string>
+    <string name="digits_caption">To try recognition of digits: say something like \"one two three four five\".</string>
+    <string name="forecast_caption">To try recognition of a weather forecast like \"sunny spells on Wednesday\".</string>
+    <string name="phone_caption">To try phonetic recognition say anything.</string>
+
+
+    <string name="get_started">Get Started!</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">REGISTER</string>
+
+    <string name="age_grp">Age Group</string>
+
+    <string name="uname_hint">Username</string>
+    <string name="fname_hint">First Name</string>
+    <string name="lname_hint">Last Name</string>
+    <string name="pswrd_hint">Password</string>
+    <string name="cnf_pswrd_hint">Confirm Password</string>
+    <string name="age_hint">Age</string>
+    <string name="height_hint">Height (in c.m.)</string>
+
+    <string-array name="age_group" >
+        <item>Age Group</item>
+        <item>10-15</item>
+        <item>16-24</item>
+        <item>25-40</item>
+        <item>40+</item>
+    </string-array>
+
+    <string name="tut">TIME-UNDER-TENSION MEASUREMENT</string>
+    <string name="voice">VOICE COACH</string>
+    <string name="rep_counter">LIVE REPETITION COUNTER</string>
+    <string name="intro_app">Personal Trainer</string>
+
+
+    <string name="tut_hint">A system for measuring time under tension while workout.</string>
+    <string name="voice_hint">Operate by simple voice commands, like Start Push Up</string>
+    <string name="rep_counter_hint">Automatically counts and stores the total repetition of Exercise during workout session</string>
+    <string name="skip">SKIP</string>
+    <string name="title_activity_welcome">Welcome</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_work_out_dashboard">WorkOutDashboard</string>
+    <string name="title_activity_work_out">WorkOut</string>
+</resources>
